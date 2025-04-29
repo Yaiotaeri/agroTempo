@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Tq</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="basePrevision">
+        <h1>Agro Prevision</h1>
+        <input type="text" id="citySearch" placeholder="Buscar cidade" oninput="searchCity()">
+        <div id="cityList"></div> <!-- Lista de sugestões de cidades -->
+        <div class="btnsSearch">
+            <button id="searchCity">Buscar</button>
+            <button onclick="getLocation()">📍 Localização Atual</button>
+        </div>
+        <div id="weatherInfo">
+            <!-- Informações do clima serão exibidas aqui -->
+        </div>
+        <button id="sendEmailButton">Enviar para o E-mail</button>
+
+    </div>
+    <div class="background-vid">
+        <video autoplay loop muted id="videback">
+            <source src="./img/backdia.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos em HTML5.
+        </video>
+    </div>
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script defer src="./js/index.js"></script>
+</body>
+</html>
