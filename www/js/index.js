@@ -218,7 +218,7 @@ document.addEventListener("deviceready", function() {
 
 
 // Inicializa o EmailJS com a chave pública
-emailjs.init("SUhDhXzSelHqmbKYj"); // Substitua pela sua chave pública do EmailJS
+emailjs.init("i8CttdVWKSwfyrCtU"); // Substitua pela sua chave pública do EmailJS
 
 // Função para enviar o e-mail com os dados do clima
 function sendWeatherEmail(cityName, temperature, weatherDescription, humidity, windSpeed) {
